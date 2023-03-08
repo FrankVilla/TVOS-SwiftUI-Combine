@@ -13,24 +13,31 @@ struct ContentView: View {
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: true) {
-            HStack(alignment: .top, spacing: 280) {
+            HStack(alignment: .top, spacing: 120) {
                 ForEach(viewModel.movies) { movie in
                     VStack(alignment: .leading, spacing: 10) {
-                        RemoteImage(url: movie.posterPath!)
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 450, height: 600)
-                            .cornerRadius(10)
-                        Text(movie.title)
-                            .font(.headline)
-                            .foregroundColor(.primary)
-                        Text(movie.category)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
-                        Text(movie.year)
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+                        VStack(alignment: .leading, spacing: 10) { // new VStack
+                            Button(action: {}) {
+                                RemoteImage(url: movie.posterPath!)
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 450, height: 600)
+                                    .cornerRadius(10)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                            Text(movie.title)
+                                .font(.subheadline) // or .caption
+                                .foregroundColor(.primary)
+            
+                            Text(movie.category)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                            Text(movie.year)
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                        }
+                        .frame(width: 300)
                     }
-                    .frame(width: 300)
+                    .padding(.leading, 140)
                 }
             }
         }
@@ -42,3 +49,4 @@ struct ContentView: View {
         }
     }
 }
+

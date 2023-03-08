@@ -17,7 +17,7 @@ enum APIError: Error {
 
 class MovieService {
     private let baseURL = "https://api.themoviedb.org/3/discover/movie"
-    private let apiKey = "YOU API KEY"
+    private let apiKey = "bd33fcd794c73e3c2b35a72cc70bb451"
     
     func getMovies(by genreId: Int) -> AnyPublisher<[Model], APIError> {
         guard let url = URL(string: "\(baseURL)?api_key=\(apiKey)&with_genres=\(genreId)") else {
