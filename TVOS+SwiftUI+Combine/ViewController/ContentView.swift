@@ -16,7 +16,7 @@ struct ContentView: View {
             HStack(alignment: .top, spacing: 120) {
                 ForEach(viewModel.movies) { movie in
                     VStack(alignment: .leading, spacing: 10) {
-                        VStack(alignment: .leading, spacing: 10) { // new VStack
+                        VStack(alignment: .leading, spacing: 10) {
                             Button(action: {}) {
                                 RemoteImage(url: movie.posterPath!)
                                     .aspectRatio(contentMode: .fill)
@@ -25,7 +25,7 @@ struct ContentView: View {
                             }
                             .buttonStyle(PlainButtonStyle())
                             Text(movie.title)
-                                .font(.subheadline) // or .caption
+                                .font(.subheadline)
                                 .foregroundColor(.primary)
             
                             Text(movie.category)

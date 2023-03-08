@@ -22,6 +22,7 @@
 		B28B9D8329B8799D00C1E113 /* ProductionCountries.swift 09-05-00-995.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B9D7E29B8799D00C1E113 /* ProductionCountries.swift 09-05-00-995.swift */; };
 		B28B9D8429B8799D00C1E113 /* Genres.swift 09-05-00-936.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B9D7F29B8799D00C1E113 /* Genres.swift 09-05-00-936.swift */; };
 		B28B9D8629B87FA000C1E113 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B9D8529B87FA000C1E113 /* Model.swift */; };
+		B28B9D8B29B8886F00C1E113 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28B9D8A29B8886F00C1E113 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B28B9D7E29B8799D00C1E113 /* ProductionCountries.swift 09-05-00-995.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProductionCountries.swift 09-05-00-995.swift"; sourceTree = "<group>"; };
 		B28B9D7F29B8799D00C1E113 /* Genres.swift 09-05-00-936.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Genres.swift 09-05-00-936.swift"; sourceTree = "<group>"; };
 		B28B9D8529B87FA000C1E113 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../../.Trash/Model.swift; sourceTree = "<group>"; };
+		B28B9D8A29B8886F00C1E113 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Model.swift; path = ../../../../../.Trash/Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +106,9 @@
 		B24DBACC29B01DDD0021B2E9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				B28B9D7F29B8799D00C1E113 /* Genres.swift 09-05-00-936.swift */,
-				B28B9D7B29B8799D00C1E113 /* Model.swift 09-05-16-567.swift */,
-				B28B9D7D29B8799D00C1E113 /* ProductionCompanies.swift 09-05-00-904.swift */,
-				B28B9D7E29B8799D00C1E113 /* ProductionCountries.swift 09-05-00-995.swift */,
-				B28B9D7C29B8799D00C1E113 /* SpokenLanguages.swift 09-05-00-952.swift */,
 				B24DBAD429B01EAD0021B2E9 /* Movie.swift */,
 				B28B9D8529B87FA000C1E113 /* Model.swift */,
+				B28B9D8729B8886300C1E113 /* New Group */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +136,19 @@
 				B24DBADF29B024380021B2E9 /* RemoteImage.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B28B9D8729B8886300C1E113 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				B28B9D8A29B8886F00C1E113 /* Model.swift */,
+				B28B9D7F29B8799D00C1E113 /* Genres.swift 09-05-00-936.swift */,
+				B28B9D7B29B8799D00C1E113 /* Model.swift 09-05-16-567.swift */,
+				B28B9D7D29B8799D00C1E113 /* ProductionCompanies.swift 09-05-00-904.swift */,
+				B28B9D7E29B8799D00C1E113 /* ProductionCountries.swift 09-05-00-995.swift */,
+				B28B9D7C29B8799D00C1E113 /* SpokenLanguages.swift 09-05-00-952.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B28B9D8B29B8886F00C1E113 /* Model.swift in Sources */,
 				B28B9D8429B8799D00C1E113 /* Genres.swift 09-05-00-936.swift in Sources */,
 				B24DBAD929B01EAD0021B2E9 /* Movie.swift in Sources */,
 				B28B9D8129B8799D00C1E113 /* SpokenLanguages.swift 09-05-00-952.swift in Sources */,
